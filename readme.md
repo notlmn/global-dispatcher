@@ -52,4 +52,4 @@ class Button extends HTMLElement {
 ```
 
 ## License
-MIT © [Ram Lmn](https://github.com/ramlmn)
+[MIT](license)
