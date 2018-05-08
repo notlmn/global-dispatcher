@@ -1,0 +1,35 @@
+{
+  "name": "global-dispatcher",
+  "version": "0.0.1",
+  "description": "A mini module to handle global level events (or to pass data between components)",
+  "license": "MIT",
+  "repository": "notlmn/global-dispatcher",
+  "author": {
+    "name": "Laxman",
+    "email": "notlmn@outlook.com",
+    "url": "https://github.com/notlmn"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "component",
+    "subscribe",
+    "subscriber",
+    "dispatch",
+    "dispatcher"
+  ],
+  "devDependencies": {
+    "xo": "^0.21.0"
+	},
+	"xo": {
+		"space": 2
+	}
+}
