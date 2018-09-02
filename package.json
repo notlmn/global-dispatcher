@@ -1,6 +1,6 @@
 {
   "name": "global-dispatcher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mini module to handle global level events (or to pass data between components)",
   "license": "MIT",
   "repository": "notlmn/global-dispatcher",
