@@ -27,7 +27,7 @@
     "dispatcher"
   ],
   "devDependencies": {
-    "xo": "^0.21.0"
+    "xo": "^0.22.0"
 	},
 	"xo": {
 		"space": 2
