@@ -56,3 +56,10 @@ function dispatchSync(eventName, eventData) {
 		subscribers[i](eventData);
 	}
 }
+
+export {
+  subscribe,
+  dispatch,
+  dispatchSync
+}
+

@@ -1,35 +1,37 @@
 {
-  "name": "global-dispatcher",
-  "version": "0.0.2",
-  "description": "A mini module to handle global level events (or to pass data between components)",
-  "license": "MIT",
-  "repository": "notlmn/global-dispatcher",
-  "author": {
-    "name": "Laxman",
-    "email": "notlmn@outlook.com",
-    "url": "https://github.com/notlmn"
-  },
-  "main": "index.js",
-  "engines": {
-    "node": ">=6"
-  },
-  "scripts": {
-    "test": "xo"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "component",
-    "subscribe",
-    "subscriber",
-    "dispatch",
-    "dispatcher"
-  ],
-  "devDependencies": {
-    "xo": "^0.22.0"
+	"name": "global-dispatcher",
+	"version": "0.0.2",
+	"description": "Basically a bare bones global event emitter",
+	"license": "MIT",
+	"author": "Laxman <notlmn@outlook.com> (https://github.com/notlmn)",
+	"main": "cjs/index.js",
+	"module": "esm/index.js",
+	"unpkg": "min/min.js",
+	"repository": "https://github.com/notlmn/global-dispatcher",
+	"scripts": {
+		"test": "npm run build",
+		"build": "npm run build:esm && npm run build:cjs && npm run build:min",
+		"build:esm": "cp -f index.js esm/index.js && echo \"\nexport {\n  subscribe,\n  dispatch,\n  dispatchSync\n}\n\" >> esm/index.js",
+		"build:cjs": "cp -f index.js cjs/index.js && echo \"\nmodule.exports = {\n  subscribe,\n  dispatch,\n  dispatchSync\n};\n\" >> cjs/index.js",
+		"build:min": "uglifyjs index.js --comments=/^!/ -c -m -o min/min.js && npm run build:min:esm",
+		"build:min:esm": "cp -f min/min.js min/min.esm.js && echo \"export{subscribe,dispatch,dispatchSync}\" >> min/min.esm.js"
 	},
-	"xo": {
-		"space": 2
+	"engines": {
+		"node": ">=6"
+	},
+	"files": [
+		"index.js",
+		"cjs/index.js",
+		"esm/index.js"
+	],
+	"keywords": [
+		"subscribe",
+		"subscriber",
+		"dispatch",
+		"dispatcher",
+		"eventemitter"
+	],
+	"devDependencies": {
+		"uglify-js": "^3.4.9"
 	}
 }
