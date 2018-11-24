@@ -22,7 +22,8 @@
 	"files": [
 		"index.js",
 		"cjs/index.js",
-		"esm/index.js"
+		"esm/index.js",
+		"min/*.js"
 	],
 	"keywords": [
 		"subscribe",
