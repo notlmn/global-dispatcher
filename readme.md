@@ -98,10 +98,10 @@ import eventEmitterConstructor from 'some-event-emitter-library';
 export default eventEmitterConstructor();
 
 // components/component1.js
-import emitter from '../util/emitter.js
+import emitter from '../util/emitter.js'
 
 // components/component2.js
-import emitter from '../util/emitter.js
+import emitter from '../util/emitter.js'
 ```
 </details>
 
@@ -111,4 +111,5 @@ Because its global by default, not bound to any object/constructor. And you do n
 
 
 ## License
+
 [MIT](license)
