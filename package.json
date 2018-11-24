@@ -1,6 +1,6 @@
 {
 	"name": "global-dispatcher",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "Basically a bare bones global event emitter",
 	"license": "MIT",
 	"author": "Laxman <notlmn@outlook.com> (https://github.com/notlmn)",
