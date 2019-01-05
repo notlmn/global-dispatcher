@@ -2,7 +2,7 @@
 
 > Basically a global bare bones event emitter
 
-- **Functional**: no `this` (for you poeple obsessed with FP)
+- **Functional**: no `this` (for you people obsessed with FP)
 - **Tiny**: 350 Bytes (min + gzip)
 - **No transpilation required**: written in ES3, import directly
 - **No constructor**: everything is [global](#why-global-by-default)
@@ -10,9 +10,9 @@
 
 ## Import
 
-- **CJS**: `const {subscribe, dispath} = require('global-dispatcher');`
-- **ESM/Node**: `import {subscribe, dispath} from 'global-dispatcher';`
-- **ESM/Unpkg**: `import {subscribe, dispath} from 'https://unpkg.com/global-dispatcher/min.esm.js';`
+- **CJS**: `const {subscribe, dispatch} = require('global-dispatcher');`
+- **ESM/Node**: `import {subscribe, dispatch} from 'global-dispatcher';`
+- **ESM/Unpkg**: `import {subscribe, dispatch} from 'https://unpkg.com/global-dispatcher/min/min.esm.js';`
 
 ## Usage
 
